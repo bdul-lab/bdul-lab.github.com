@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050c19">
+
+  <title>B.Dulauroy — D-Lab</title>
+  <meta name="description" content="bdul lab — projets et expérimentations de b.dulauroy.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+
+    <a class="brand" href="#home" aria-label="B.Dulauroy — Home">
+
+      <svg
+        class="brand-emblem"
+        viewBox="0 0 100 100"
+        role="img"
+        aria-label="Geometric cube emblem"
+        focusable="false"
+      >
+        <circle
+          cx="50" cy="50" r="43"
+          fill="none"
+          stroke="#dcecff"
+          stroke-width="2"
+        />
+
+        <circle
+          cx="50" cy="50" r="30"
+          fill="none"
+          stroke="#91c9f2"
+          stroke-width="1.2"
+        />
+
+        <path
+          d="M50 7V93 M7 50H93 M20 20L80 80 M80 20L20 80"
+          stroke="#dcecff"
+          stroke-width="1"
+          fill="none"
+        />
+
+        <path
+          d="M50 31L67 41V60L50 70L33 60V41Z"
+          fill="none"
+          stroke="#f4f7fc"
+          stroke-width="2"
+        />
+
+        <circle
+          cx="50" cy="50" r="3"
+          fill="#91c9f2"
+        />
+      </svg>
+
+      <span class="brand-name">
+        B.Dulauroy<span class="brand-dot">.</span>
+      </span>
+
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+  </header>
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+      <div class="hero-content">
+        <p class="eyebrow"><em>D-Lab</em> — </p>
+
+        <h1>B.Dulauroy<span class="accent">.</span></h1>
+
+        <p class="caption">
+          TURNING INSIGHTS INTO POWERFUL OUTCOMES
+        </p>
+
+        <p class="hero-description">
+          Exploring ideas at the intersection of technology, design
+          and data. A curated collection of experiments, tools and
+          projects in progress.
+        </p>
+
+        <a class="primary-button" href="#projects">
+          Explore projects <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      
+
+      <!-- GEOMETRIC EMBLEM -->
+      <div
+        class="emblem"
+        role="img"
+        aria-label="Geometric emblem with a slowly rotating three-dimensional cube"
+      >
+        <div class="glow"></div>
+
+        <svg class="geometry" viewBox="0 0 400 400" aria-hidden="true">
+          <circle class="bright" cx="200" cy="200" r="174"/>
+          <circle class="faint" cx="200" cy="200" r="151"/>
+          <circle cx="200" cy="200" r="124"/>
+          <circle class="faint" cx="200" cy="200" r="91"/>
+          <circle class="faint" cx="200" cy="200" r="58"/>
+
+          <ellipse class="faint" cx="200" cy="200" rx="124" ry="48"/>
+          <ellipse class="faint" cx="200" cy="200" rx="48" ry="124"/>
+
+          <path d="
+            M200 26V374
+            M26 200H374
+            M77 77L323 323
+            M323 77L77 323
+            M200 49L331 125V275L200 351L69 275V125Z
+          "/>
+
+          <path class="faint" d="
+            M200 49V351
+            M69 125L331 275
+            M331 125L69 275
+            M107 200L200 107L293 200L200 293Z
+          "/>
+
+          <circle class="node" cx="200" cy="26" r="2.3"/>
+          <circle class="node" cx="374" cy="200" r="2.3"/>
+          <circle class="node" cx="200" cy="374" r="2.3"/>
+          <circle class="node" cx="26" cy="200" r="2.3"/>
+
+          <circle class="node" cx="200" cy="76" r="1.8"/>
+          <circle class="node" cx="324" cy="200" r="1.8"/>
+          <circle class="node" cx="200" cy="324" r="1.8"/>
+          <circle class="node" cx="76" cy="200" r="1.8"/>
+        </svg>
+
+        <!-- TRUE THREE-DIMENSIONAL CUBE -->
+        <div class="cube-stage" aria-hidden="true">
+          <div class="cube">
+            <i class="face front"></i>
+            <i class="face back"></i>
+            <i class="face right"></i>
+            <i class="face left"></i>
+            <i class="face top"></i>
+            <i class="face bottom"></i>
+            <i class="core"></i>
+          </div>
+        </div>
+
+        <div class="caption">
+          Structure · Form · Possibility
+        </div>
+      </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects section" id="projects">
+
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Selected work</p>
+          <h2>Projects<span class="accent">.</span></h2>
+        </div>
+
+        <p class="section-note">
+          A collection of explorations, experiments and ideas.
+          Select a project to discover more.
+        </p>
+      </div>
+
+      <div class="project-grid">
+
+        <!-- PROJECT 1 -->
+        <button
+          class="project-card"
+          type="button"
+          data-project="geometry"
+          aria-haspopup="dialog"
+        >
+          <div class="project-art art-geometry">
+            <div class="geometry-circle"></div>
+            <div class="geometry-square"></div>
+            <div class="geometry-line"></div>
+            <span class="art-index">01</span>
+          </div>
+
+          <div class="project-info">
+            <div>
+              <h3>Geometry Lab</h3>
+              <p>Visual systems · Research</p>
+            </div>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </div>
+        </button>
+
+        <!-- PROJECT 2 -->
+        <button
+          class="project-card"
+          type="button"
+          data-project="digital"
+          aria-haspopup="dialog"
+        >
+          <div class="project-art art-digital">
+            <div class="digital-ring ring-one"></div>
+            <div class="digital-ring ring-two"></div>
+            <div class="digital-core"></div>
+            <span class="art-index">02</span>
+          </div>
+
+          <div class="project-info">
+            <div>
+              <h3>Digital Systems</h3>
+              <p>Technology · Development</p>
+            </div>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </div>
+        </button>
+
+        <!-- PROJECT 3 -->
+        <button
+          class="project-card"
+          type="button"
+          data-project="data"
+          aria-haspopup="dialog"
+        >
+          <div class="project-art art-data">
+            <div class="data-bars">
+              <i></i><i></i><i></i><i></i>
+              <i></i><i></i><i></i>
+            </div>
+            <div class="data-line"></div>
+            <span class="art-index">03</span>
+          </div>
+
+          <div class="project-info">
+            <div>
+              <h3>Data Explorations</h3>
+              <p>Data · Insights</p>
+            </div>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </div>
+        </button>
+
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+
+      <div class="about-mark" aria-hidden="true">
+        <div class="about-circle"></div>
+        <p class="eyebrow">About the lab</p>
+
+        <h2>
+          Curiosity, made tangible.
+        </h2>
+      </div>
+
+      <div class="about-content">
+        <p>
+          Bdul-Lab is a space for building, exploring and connecting
+          ideas. From digital tools to data-driven thinking, each
+          project is an opportunity to transform complexity into
+          something useful.
+        </p>
+      </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+
+      <div class="contact-copy">
+        <p class="eyebrow">Have an idea?</p>
+        <h2>Let's make it <span class="accent">real.</span></h2>
+        <p>
+          Open to ideas, collaborations and thoughtful experiments.
+        </p>
+      </div>
+
+      <div class="contact-actions">
+        <!-- Email is assembled by JavaScript to avoid exposing
+             the complete address directly in the HTML. -->
+        <a
+          class="primary-button"
+          id="email-link"
+          href="#contact"
+        >
+          Get in touch <span aria-hidden="true">↗</span>
+        </a>
+
+        <a
+          class="secondary-button"
+          href="https://github.com/bdul-lab"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Explore GitHub <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <a class="brand" href="#home">
+      B.Dulauroy<span class="brand-dot">.</span>
+    </a>
+
+    <p>Bdul-Lab — <em>Ora et labora</em></p>
+
+    <p class="copyright">
+      © <span id="year"></span> B.Dulauroy
+    </p>
+  </footer>
+
+  <!-- PROJECT DETAIL MODAL -->
+  <div
+    class="modal"
+    id="project-modal"
+    aria-hidden="true"
+    inert
+  >
+    <div class="modal-backdrop" data-close-modal></div>
+
+    <section
+      class="modal-panel"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+      aria-describedby="modal-description"
+      tabindex="-1"
+    >
+      <button
+        class="modal-close"
+        type="button"
+        aria-label="Close project details"
+        data-close-modal
+      >×</button>
+
+      <div class="modal-content">
+
+        <p class="eyebrow" id="modal-category"></p>
+
+        <h2 id="modal-title"></h2>
+
+        <p id="modal-description"></p>
+
+        <div
+          class="modal-gallery"
+          id="modal-gallery"
+          aria-label="Project media"
+        ></div>
+
+        <a
+          class="primary-button"
+          id="modal-repository"
+          href="https://github.com/bdul-lab"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          See in repository <span aria-hidden="true">↗</span>
+        </a>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- INTERACTIONS -->
+  <script>
+    "use strict";
+
+    /* ==============================================
+       PROJECT DATA
+
+       Replace the example descriptions, repository URLs
+       and media paths with your actual project content.
+
+       Supported media:
+       - Images: { type: "image", src: "images/example.jpg", alt: "..." }
+       - Videos: { type: "video", src: "videos/demo.mp4" }
+    ============================================== */
+
+    const projects = {
+      geometry: {
+        category: "Visual systems · Research",
+        title: "Geometry Lab",
+        description:
+          "An exploration of geometric relationships, spatial logic and visual systems. This project investigates how simple forms can express complex relationships and become a foundation for coherent design.",
+        repository: "https://github.com/bdul-lab",
+        media: []
+      },
+
+      digital: {
+        category: "Technology · Development",
+        title: "Digital Systems",
+        description:
+          "A collection of digital experiments, tools and interfaces designed to turn ideas into practical, structured outcomes.",
+        repository: "https://github.com/bdul-lab",
+        media: []
+      },
+
+      data: {
+        category: "Data · Insights",
+        title: "Data Explorations",
+        description:
+          "Experiments in data analysis and visualisation, with an emphasis on revealing patterns, making information understandable and supporting better decisions.",
+        repository: "https://github.com/bdul-lab",
+        media: []
+      }
+    };
+
+    /* ==============================================
+       PROJECT MODAL
+    ============================================== */
+
+    const modal = document.getElementById("project-modal");
+    const modalPanel = modal.querySelector(".modal-panel");
+    const modalTitle = document.getElementById("modal-title");
+    const modalCategory = document.getElementById("modal-category");
+    const modalDescription = document.getElementById("modal-description");
+    const modalGallery = document.getElementById("modal-gallery");
+    const modalRepository = document.getElementById("modal-repository");
+
+    let previouslyFocusedElement = null;
+
+    function openProject(projectId, trigger) {
+      const project = projects[projectId];
+
+      if (!project) return;
+
+      previouslyFocusedElement = trigger || document.activeElement;
+
+      modalCategory.textContent = project.category;
+      modalTitle.textContent = project.title;
+      modalDescription.textContent = project.description;
+
+      modalRepository.href = project.repository;
+
+      modalGallery.replaceChildren();
+
+      if (!project.media || project.media.length === 0) {
+        const placeholder = document.createElement("div");
+
+        placeholder.className =
+          "media-placeholder media-wide";
+
+        placeholder.textContent =
+          "Project media can be added here.";
+
+        modalGallery.appendChild(placeholder);
+      } else {
+        project.media.forEach((media) => {
+          let element;
+
+          if (media.type === "image") {
+            element = document.createElement("img");
+            element.src = media.src;
+            element.alt = media.alt || project.title;
+            element.loading = "lazy";
+          } else if (media.type === "video") {
+            element = document.createElement("video");
+            element.src = media.src;
+            element.controls = true;
+            element.preload = "metadata";
+            element.playsInline = true;
+          } else {
+            return;
+          }
+
+          if (media.wide) {
+            element.classList.add("media-wide");
+          }
+
+          modalGallery.appendChild(element);
+        });
+      }
+
+      modal.classList.add("is-open");
+      modal.setAttribute("aria-hidden", "false");
+      modal.inert = false;
+      document.body.classList.add("modal-open");
+
+      modalPanel.scrollTop = 0;
+
+      requestAnimationFrame(() => {
+        modalPanel.focus();
+      });
+    }
+
+    function closeProject() {
+      if (!modal.classList.contains("is-open")) return;
+
+      modal.classList.remove("is-open");
+      modal.setAttribute("aria-hidden", "true");
+      modal.inert = true;
+      document.body.classList.remove("modal-open");
+
+      modalGallery.querySelectorAll("video").forEach((video) => {
+        video.pause();
+      });
+
+      if (
+        previouslyFocusedElement &&
+        document.contains(previouslyFocusedElement)
+      ) {
+        previouslyFocusedElement.focus();
+      }
+    }
+
+    document.querySelectorAll("[data-project]").forEach((button) => {
+      button.addEventListener("click", () => {
+        openProject(button.dataset.project, button);
+      });
+    });
+
+    modal.querySelectorAll("[data-close-modal]").forEach((element) => {
+      element.addEventListener("click", closeProject);
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (!modal.classList.contains("is-open")) return;
+
+      if (event.key === "Escape") {
+        closeProject();
+        return;
+      }
+
+      /* Keep keyboard focus inside the open dialog. */
+      if (event.key === "Tab") {
+        const focusable = Array.from(
+          modalPanel.querySelectorAll(
+            'a[href], button:not([disabled]), video[controls], [tabindex="0"]'
+          )
+        ).filter((element) => element.getClientRects().length > 0);
+
+        if (focusable.length === 0) {
+          event.preventDefault();
+          modalPanel.focus();
+          return;
+        }
+
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+
+        if (
+          event.shiftKey &&
+          (document.activeElement === first ||
+           document.activeElement === modalPanel)
+        ) {
+          event.preventDefault();
+          last.focus();
+        } else if (
+          !event.shiftKey &&
+          document.activeElement === last
+        ) {
+          event.preventDefault();
+          first.focus();
+        }
+      }
+    });
+
+    /* ==============================================
+       EMAIL LINK
+
+       Replace the two placeholder strings below with
+       the actual local part and domain of your email.
+       Example: "hello" and "example.com".
+    ============================================== */
+
+    const emailUser = "YOUR_EMAIL_USER";
+    const emailDomain = "YOUR_EMAIL_DOMAIN";
+    const emailLink = document.getElementById("email-link");
+
+    if (
+      emailUser !== "YOUR_EMAIL_USER" &&
+      emailDomain !== "YOUR_EMAIL_DOMAIN"
+    ) {
+      emailLink.href =
+        "mailto:" + emailUser + "@" + emailDomain;
+    } else {
+      emailLink.addEventListener("click", (event) => {
+        event.preventDefault();
+        alert(
+          "Please configure your email address in the HTML script before using this link."
+        );
+      });
+    }
+
+    /* ==============================================
+       DYNAMIC COPYRIGHT YEAR
+    ============================================== */
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
