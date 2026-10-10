@@ -167,95 +167,152 @@
 
     </section>
 
-    <!-- PROJECTS -->
-    <section class="projects section" id="projects">
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
 
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">Selected work</p>
-          <h2>Projects<span class="accent">.</span></h2>
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Selected work</p>
+        <h2>Projects<span class="accent">.</span></h2>
+      </div>
+
+      <p class="section-note">
+        A collection of explorations, experiments and ideas.
+        Select a project to discover more.
+      </p>
+    </div>
+
+    <div class="project-grid">
+
+      <!-- PROJECT 1: BDUL_LAB WEBSITE -->
+      <button
+        class="project-card"
+        type="button"
+        data-project="geometry"
+        aria-haspopup="dialog"
+      >
+        <div class="project-art art-geometry">
+          <div class="geometry-circle"></div>
+          <div class="geometry-square"></div>
+          <div class="geometry-line"></div>
+          <span class="art-index">01</span>
         </div>
 
-        <p class="section-note">
-          A collection of explorations, experiments and ideas.
-          Select a project to discover more.
+        <div class="project-info">
+          <div>
+            <h3>bdul_Lab website</h3>
+            <p>Web Visualisation · Design</p>
+          </div>
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </div>
+      </button>
+
+      <!-- PROJECT 2: ASTRE -->
+      <button
+        class="project-card"
+        type="button"
+        data-project="digital"
+        aria-haspopup="dialog"
+      >
+        <div class="project-art art-digital">
+          <div class="digital-ring ring-one"></div>
+          <div class="digital-ring ring-two"></div>
+          <div class="digital-core"></div>
+          <span class="art-index">02</span>
+        </div>
+
+        <div class="project-info">
+          <div>
+            <h3>Projet Astre</h3>
+            <p>Interactive Systems · Development</p>
+          </div>
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </div>
+      </button>
+
+      <!-- PROJECT 3: AI EXPLORATIONS -->
+      <button
+        class="project-card"
+        type="button"
+        data-project="data"
+        aria-haspopup="dialog"
+      >
+        <div class="project-art art-data">
+          <div class="data-bars">
+            <i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i>
+          </div>
+          <div class="data-line"></div>
+          <span class="art-index">03</span>
+        </div>
+
+        <div class="project-info">
+          <div>
+            <h3>AI Explorations</h3>
+            <p>AI · Tools & Workflows</p>
+          </div>
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </div>
+      </button>
+
+    </div>
+  </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+
+      <div class="about-mark" aria-hidden="true">
+        <div class="about-circle"></div>
+        <p class="eyebrow">About the lab</p>
+
+        <h2>
+          Curiosity, made tangible.
+        </h2>
+      </div>
+
+      <div class="about-content">
+        <p>
+          Bdul-Lab is a space for building, exploring and connecting
+          ideas. From digital tools to data-driven thinking, each
+          project is an opportunity to transform complexity into
+          something useful.
         </p>
       </div>
 
-      <div class="project-grid">
+    </section>
 
-        <!-- PROJECT 1: BDUL_LAB WEBSITE -->
-        <button
-          class="project-card"
-          type="button"
-          data-project="geometry"
-          aria-haspopup="dialog"
-        >
-          <div class="project-art art-geometry">
-            <div class="geometry-circle"></div>
-            <div class="geometry-square"></div>
-            <div class="geometry-line"></div>
-            <span class="art-index">01</span>
-          </div>
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
 
-          <div class="project-info">
-            <div>
-              <h3>bdul_Lab website</h3>
-              <p>Web Visualisation · Design</p>
-            </div>
-            <span class="project-arrow" aria-hidden="true">↗</span>
-          </div>
-        </button>
-
-        <!-- PROJECT 2: ASTRE -->
-        <button
-          class="project-card"
-          type="button"
-          data-project="digital"
-          aria-haspopup="dialog"
-        >
-          <div class="project-art art-digital">
-            <div class="digital-ring ring-one"></div>
-            <div class="digital-ring ring-two"></div>
-            <div class="digital-core"></div>
-            <span class="art-index">02</span>
-          </div>
-
-          <div class="project-info">
-            <div>
-              <h3>Projet Astre</h3>
-              <p>Interactive Systems · Development</p>
-            </div>
-            <span class="project-arrow" aria-hidden="true">↗</span>
-          </div>
-        </button>
-
-        <!-- PROJECT 3: AI EXPLORATIONS -->
-        <button
-          class="project-card"
-          type="button"
-          data-project="data"
-          aria-haspopup="dialog"
-        >
-          <div class="project-art art-data">
-            <div class="data-bars">
-              <i></i><i></i><i></i><i></i>
-              <i></i><i></i><i></i>
-            </div>
-            <div class="data-line"></div>
-            <span class="art-index">03</span>
-          </div>
-
-          <div class="project-info">
-            <div>
-              <h3>AI Explorations</h3>
-              <p>AI · Tools &amp; Workflows</p>
-            </div>
-            <span class="project-arrow" aria-hidden="true">↗</span>
-          </div>
-        </button>
-
+      <div class="contact-copy">
+        <p class="eyebrow">Have an idea?</p>
+        <h2>Let's make it <span class="accent">real.</span></h2>
+        <p>
+          Open to ideas, collaborations and thoughtful experiments.
+        </p>
       </div>
+
+      <div class="contact-actions">
+        <!-- Email is assembled by JavaScript to avoid exposing
+             the complete address directly in the HTML. -->
+        <a
+          class="primary-button"
+          id="email-link"
+          href="#contact"
+        >
+          Get in touch <span aria-hidden="true">↗</span>
+        </a>
+
+        <a
+          class="secondary-button"
+          href="https://github.com/bdul-lab"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Explore GitHub <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+
     </section>
 
   </main>
