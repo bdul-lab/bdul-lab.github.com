@@ -17,65 +17,44 @@
 
 <body>
 
-  <!-- HEADER -->
-  <header class="site-header">
 
-    <a class="brand" href="#home" aria-label="B.Dulauroy — Home">
+<!-- FIXED HEADER -->
+<header class="site-header">
+  <a class="brand" href="#home" aria-label="B.Dulauroy — Home">
+    <svg
+      class="brand-emblem"
+      viewBox="0 0 100 100"
+      role="img"
+      aria-label="Geometric cube emblem"
+      focusable="false"
+    >
+      <circle cx="50" cy="50" r="43" fill="none"
+        stroke="#dcecff" stroke-width="2"/>
+      <circle cx="50" cy="50" r="30" fill="none"
+        stroke="#91c9f2" stroke-width="1.2"/>
+      <path d="M50 7V93 M7 50H93 M20 20L80 80 M80 20L20 80"
+        stroke="#dcecff" stroke-width="1" fill="none"/>
+      <path d="M50 31L67 41V60L50 70L33 60V41Z"
+        fill="none" stroke="#f4f7fc" stroke-width="2"/>
+      <circle cx="50" cy="50" r="3" fill="#91c9f2"/>
+    </svg>
 
-      <svg
-        class="brand-emblem"
-        viewBox="0 0 100 100"
-        role="img"
-        aria-label="Geometric cube emblem"
-        focusable="false"
-      >
-        <circle
-          cx="50" cy="50" r="43"
-          fill="none"
-          stroke="#dcecff"
-          stroke-width="2"
-        />
+    <span class="brand-name">
+      B.Dulauroy<span class="brand-dot">.</span>
+    </span>
+  </a>
 
-        <circle
-          cx="50" cy="50" r="30"
-          fill="none"
-          stroke="#91c9f2"
-          stroke-width="1.2"
-        />
-
-        <path
-          d="M50 7V93 M7 50H93 M20 20L80 80 M80 20L20 80"
-          stroke="#dcecff"
-          stroke-width="1"
-          fill="none"
-        />
-
-        <path
-          d="M50 31L67 41V60L50 70L33 60V41Z"
-          fill="none"
-          stroke="#f4f7fc"
-          stroke-width="2"
-        />
-
-        <circle
-          cx="50" cy="50" r="3"
-          fill="#91c9f2"
-        />
-      </svg>
-
-      <span class="brand-name">
-        B.Dulauroy<span class="brand-dot">.</span>
-      </span>
-
+  <nav class="main-nav" aria-label="Main navigation">
+    <a href="#home" class="nav-home" aria-label="Back to home">
+      <span class="home-icon" aria-hidden="true">⌂</span>
+      <span>Home</span>
     </a>
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="#projects">Projects</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
-  </header>
   <main>
 
     <!-- HERO -->
