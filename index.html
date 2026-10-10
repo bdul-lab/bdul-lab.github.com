@@ -184,7 +184,7 @@
 
       <div class="project-grid">
 
-        <!-- PROJECT 1 -->
+        <!-- PROJECT 1: BDUL_LAB WEBSITE -->
         <button
           class="project-card"
           type="button"
@@ -200,14 +200,14 @@
 
           <div class="project-info">
             <div>
-              <h3>Geometry Lab</h3>
-              <p>Visual systems · Research</p>
+              <h3>bdul_Lab website</h3>
+              <p>Web Visualisation · Design</p>
             </div>
             <span class="project-arrow" aria-hidden="true">↗</span>
           </div>
         </button>
 
-        <!-- PROJECT 2 -->
+        <!-- PROJECT 2: ASTRE -->
         <button
           class="project-card"
           type="button"
@@ -223,14 +223,14 @@
 
           <div class="project-info">
             <div>
-              <h3>Digital Systems</h3>
-              <p>Technology · Development</p>
+              <h3>Projet Astre</h3>
+              <p>Interactive Systems · Development</p>
             </div>
             <span class="project-arrow" aria-hidden="true">↗</span>
           </div>
         </button>
 
-        <!-- PROJECT 3 -->
+        <!-- PROJECT 3: AI EXPLORATIONS -->
         <button
           class="project-card"
           type="button"
@@ -248,71 +248,14 @@
 
           <div class="project-info">
             <div>
-              <h3>Data Explorations</h3>
-              <p>Data · Insights</p>
+              <h3>AI Explorations</h3>
+              <p>AI · Tools &amp; Workflows</p>
             </div>
             <span class="project-arrow" aria-hidden="true">↗</span>
           </div>
         </button>
 
       </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="about section" id="about">
-
-      <div class="about-mark" aria-hidden="true">
-        <div class="about-circle"></div>
-        <p class="eyebrow">About the lab</p>
-
-        <h2>
-          Curiosity, made tangible.
-        </h2>
-      </div>
-
-      <div class="about-content">
-        <p>
-          Bdul-Lab is a space for building, exploring and connecting
-          ideas. From digital tools to data-driven thinking, each
-          project is an opportunity to transform complexity into
-          something useful.
-        </p>
-      </div>
-
-    </section>
-
-    <!-- CONTACT -->
-    <section class="contact section" id="contact">
-
-      <div class="contact-copy">
-        <p class="eyebrow">Have an idea?</p>
-        <h2>Let's make it <span class="accent">real.</span></h2>
-        <p>
-          Open to ideas, collaborations and thoughtful experiments.
-        </p>
-      </div>
-
-      <div class="contact-actions">
-        <!-- Email is assembled by JavaScript to avoid exposing
-             the complete address directly in the HTML. -->
-        <a
-          class="primary-button"
-          id="email-link"
-          href="#contact"
-        >
-          Get in touch <span aria-hidden="true">↗</span>
-        </a>
-
-        <a
-          class="secondary-button"
-          href="https://github.com/bdul-lab"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Explore GitHub <span aria-hidden="true">↗</span>
-        </a>
-      </div>
-
     </section>
 
   </main>
@@ -397,34 +340,36 @@
        - Videos: { type: "video", src: "videos/demo.mp4" }
     ============================================== */
 
-    const projects = {
-      geometry: {
-        category: "Visual systems · Research",
-        title: "Geometry Lab",
-        description:
-          "An exploration of geometric relationships, spatial logic and visual systems. This project investigates how simple forms can express complex relationships and become a foundation for coherent design.",
-        repository: "https://github.com/bdul-lab",
-        media: []
-      },
 
-      digital: {
-        category: "Technology · Development",
-        title: "Digital Systems",
-        description:
-          "A collection of digital experiments, tools and interfaces designed to turn ideas into practical, structured outcomes.",
-        repository: "https://github.com/bdul-lab",
-        media: []
-      },
+const projects = {
+  geometry: {
+    category: "Web Visualisation · Design",
+    title: "bdul_Lab website",
+    description:
+      "An exploration of geometric relationships, spatial logic and visual systems. This project examines how simple forms can express complex ideas, creating a coherent visual identity through structure, proportion and interaction.",
+    repository: "https://github.com/bdul-lab",
+    media: []
+  },
 
-      data: {
-        category: "Data · Insights",
-        title: "Data Explorations",
-        description:
-          "Experiments in data analysis and visualisation, with an emphasis on revealing patterns, making information understandable and supporting better decisions.",
-        repository: "https://github.com/bdul-lab",
-        media: []
-      }
-    };
+  digital: {
+    category: "Software Development · Interactive Systems",
+    title: "Projet Astre",
+    description:
+      "A year-long development project exploring interactive systems, immersive environments and the relationship between mechanics, narrative and visual design. Combining software architecture, creative problem-solving and iterative experimentation, Astre brings together a complex set of interconnected elements within a coherent, evolving experience.",
+    repository: "https://github.com/bdul-lab",
+    media: []
+  },
+
+  data: {
+    category: "AI · Tools & Workflows",
+    title: "AI Explorations",
+    description:
+      "A collection of experiments in AI-assisted development, interface design and intelligent workflows. Focused on building practical tools and refining personal workspaces, these explorations aim to transform information into actionable insights and make everyday work more structured, efficient and meaningful.",
+    repository: "https://github.com/bdul-lab",
+    media: []
+  }
+};
+
 
     /* ==============================================
        PROJECT MODAL
@@ -584,8 +529,8 @@
        Example: "hello" and "example.com".
     ============================================== */
 
-    const emailUser = "YOUR_EMAIL_USER";
-    const emailDomain = "YOUR_EMAIL_DOMAIN";
+    const emailUser = "badul_log";
+    const emailDomain = "hotmail.fr";
     const emailLink = document.getElementById("email-link");
 
     if (
